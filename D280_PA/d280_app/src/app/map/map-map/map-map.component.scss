@@ -1,0 +1,27 @@
+#map {
+    margin: 5px;
+}
+
+header {
+    padding: 5px;
+    text-align: center;
+    border: solid pink 2px;
+}
+
+svg path:hover {
+    fill: pink;
+}
+
+.column1 {
+    float: left;
+}
+
+.column2 {
+    float: right;
+    position: relative;
+    top: 200px;
+    right: 100px;
+    background-color: pink;
+    width: 300px;
+    padding-top: 15px;
+}
