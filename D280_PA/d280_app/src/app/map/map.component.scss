@@ -1,0 +1,39 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    border: solid pink 3px;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.column2 {
+    position: absolute;
+    right: 250px;
+    top: 300px;
+    background-color: pink;
+    padding: 20px;
+}
+
+table {
+    height: 220px;
+    width: 300px;
+    padding: 10px;
+}
+
+caption {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.map {
+    margin: 20px;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+footer {
+    text-align: center;
+}
