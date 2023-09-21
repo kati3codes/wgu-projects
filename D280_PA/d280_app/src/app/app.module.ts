@@ -5,19 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MapModule } from './map/map.module';
-import { InfoPageComponent } from './info-page/info-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfoPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    MapModule
+    MapModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

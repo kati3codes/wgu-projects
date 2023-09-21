@@ -5,6 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './map-map.component.html',
   styleUrls: ['./map-map.component.scss']
 })
-export class MapMapComponent {
-  
+export class MapMapComponent  {
 }
