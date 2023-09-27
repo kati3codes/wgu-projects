@@ -1,0 +1,41 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    font-size: 20px;
+    text-align: center;
+    border: solid 5px pink ;
+}
+
+.column1 {
+    position: absolute;
+    bottom: -80px;
+    left: 70px;
+}
+
+.column2 {
+    position: absolute;
+    padding: 15px;
+    padding-bottom: 25px;
+    left: 1300px;
+    top: 300px;
+    text-align: left;
+    background-color: pink;
+    width: 380px;
+}
+
+h2 {
+    text-align: center;
+}
+
+td {
+    padding-left: 20px;
+}
+
+footer {
+    position: absolute;
+    top: 900px;
+    left: 800px;
+}
+

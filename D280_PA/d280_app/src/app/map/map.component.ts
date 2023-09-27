@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
   ngOnInit(): void {
-    let countryInfo = document.querySelectorAll<SVGPathElement>('path');
+    let countryPaths = document.querySelectorAll<SVGPathElement>('path');
 
-    Array.prototype.forEach.call(countryInfo, (country: SVGPathElement) => {
+    Array.prototype.forEach.call(countryPaths, (country: SVGPathElement) => {
 
       country.addEventListener('mouseover', (event: MouseEvent) => {
         const path = event.target as SVGPathElement;
@@ -28,7 +28,10 @@ export class MapComponent implements OnInit {
       country.addEventListener('mouseleave', () => {
         this.clearData(country);
       });
+
     });
+
+
   }
 
   async runApi(country: SVGPathElement) {
@@ -38,37 +41,38 @@ export class MapComponent implements OnInit {
     let dataPath: any = countryData[1];
 
     let name: string = dataPath[0].name;
-    document.getElementById('name').innerText = name;
+    document.getElementById('name')!.innerText = name;
 
     let region: string = dataPath[0].region.value;
-    document.getElementById('region').innerText = region;
+    document.getElementById('region')!.innerText = region;
 
     let income: string = dataPath[0].incomeLevel.value;
-    document.getElementById('income').innerText = income;
+    document.getElementById('income')!.innerText = income;
 
     let capital: string = dataPath[0].capitalCity;
-    document.getElementById('capital').innerText = capital;
+    document.getElementById('capital')!.innerText = capital;
 
     let longitude: string = dataPath[0].longitude;
-    document.getElementById('longitude').innerText = longitude;
+    document.getElementById('longitude')!.innerText = longitude;
 
     let latitude: string = dataPath[0].latitude;
-    document.getElementById('latitude').innerText = latitude;
+    document.getElementById('latitude')!.innerText = latitude;
 
   }
 
   clearData(country: SVGPathElement) {
 
-    document.getElementById('name').innerText = '';
+    document.getElementById('name')!.innerText = '';
 
-    document.getElementById('region').innerText = '';
+    document.getElementById('region')!.innerText = '';
 
-    document.getElementById('income').innerText = '';
+    document.getElementById('income')!.innerText = '';
 
-    document.getElementById('capital').innerText = '';
+    document.getElementById('capital')!.innerText = '';
 
-    document.getElementById('longitude').innerText = '';
+    document.getElementById('longitude')!.innerText = '';
 
-    document.getElementById('latitude').innerText = '';
+    document.getElementById('latitude')!.innerText = '';
   }
 }
+
